@@ -64,3 +64,13 @@ branch 'master' set up to track 'origin/master'.
 
 
 
+
+Notes -- Added new file and updated project
+
+git status
+git add .
+git status
+git commit -m "Added new file and updated project"
+git push origin master
+
+
