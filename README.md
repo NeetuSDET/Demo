@@ -32,4 +32,35 @@ Total 24 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/NeetuSDET/Demo.git
  + 9c56328...052a75d main -> main (forced update)
 branch 'main' set up to track 'origin/main'.
-(base) rajnishatrismbp:2026_Demo rajnishkhatri$ 
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$
+
+
+
+
+Notes---- for pushing main to master
+
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git checkout -b master
+Switched to a new branch 'master'
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git branch
+  main
+* master
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git push -u origin master
+Enumerating objects: 24, done.
+Counting objects: 100% (24/24), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (15/15), done.
+Writing objects: 100% (24/24), 2.78 KiB | 1.39 MiB/s, done.
+Total 24 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/NeetuSDET/Demo/pull/new/master
+remote: 
+To https://github.com/NeetuSDET/Demo.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git branch
+  main
+* master
+
+
+
