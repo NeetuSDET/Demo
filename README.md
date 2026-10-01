@@ -74,3 +74,56 @@ git commit -m "Added new file and updated project"
 git push origin master
 
 
+
+Notes -- merge to main branch which i hv been modified in master
+(
+git status
+git checkout main
+git pull origin main
+git merge master
+esp 
+:wq 
+then we come for further command for terminal
+git push origin main
+)
+
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git branch
+* main
+  master
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git pull origin main
+remote: Enumerating objects: 10, done.
+remote: Counting objects: 100% (10/10), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 3.53 KiB | 516.00 KiB/s, done.
+From https://github.com/NeetuSDET/Demo
+ * branch            main       -> FETCH_HEAD
+   052a75d..b968b68  main       -> origin/main
+Updating 052a75d..b968b68
+Fast-forward
+ README.md | 76 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 76 insertions(+)
+ create mode 100644 README.md
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git merge master
+Merge made by the 'ort' strategy.
+ src/test/java/Test/test1.java        |   4 +++-
+ target/test-classes/Test/test1.class | Bin 518 -> 541 bytes
+ 2 files changed, 3 insertions(+), 1 deletion(-)
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 319 bytes | 319.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/NeetuSDET/Demo.git
+   b968b68..37f01a5  main -> main
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ git branch
+* main
+  master
+(base) rajnishatrismbp:2026_Demo rajnishkhatri$ 
+
